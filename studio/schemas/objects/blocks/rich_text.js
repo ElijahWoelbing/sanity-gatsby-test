@@ -1,7 +1,7 @@
 export default {
-  name: 'rich_text',
-  type: 'document',
   title: 'Rich Text',
+  name: 'rich_text',
+  type: 'object',
   fields: [
     {
       name: 'headline',

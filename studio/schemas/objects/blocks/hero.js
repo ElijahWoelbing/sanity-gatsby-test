@@ -1,7 +1,7 @@
 export default {
   title: 'Hero',
   name: 'hero',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       title: 'Headline',

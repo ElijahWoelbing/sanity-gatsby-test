@@ -23,20 +23,16 @@ export default {
       title: 'Blocks',
       name: 'blocks',
       type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{
-            title: 'Hero',
-            type: 'hero'
-          }, {
-            title: 'Rich Text',
-            type: 'rich_text'
-          }, {
-            title: 'Text Media',
-            type: 'text_media'
-          }]
-        }
+      of: [{
+        title: 'Hero',
+        type: 'hero'
+      }, {
+        title: 'Rich Text',
+        type: 'rich_text'
+      }, {
+        title: 'Text Media',
+        type: 'text_media'
+      }
       ]
     },
     {

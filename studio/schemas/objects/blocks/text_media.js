@@ -1,7 +1,7 @@
 export default {
-  name: 'text_media',
-  type: 'document',
   title: 'Text Media',
+  name: 'text_media',
+  type: 'object',
   fields: [
     {
       title: 'Headline',
