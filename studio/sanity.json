@@ -4,7 +4,7 @@
     "name": "gatsby-sanity-test"
   },
   "api": {
-    "projectId": "x0h8eu09",
+    "projectId": "<yourProjectID>",
     "dataset": "production"
   },
   "plugins": [
