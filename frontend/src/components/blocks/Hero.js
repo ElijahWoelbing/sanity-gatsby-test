@@ -35,7 +35,6 @@ const CtaContainer = styled.div`
   margin-top: ${rem(25)};
 `;
 
-
 const Hero = ({
   headline,
   subheadline,
@@ -47,11 +46,12 @@ const Hero = ({
     <ContentWraper>
       <Headline>{headline}</Headline>
       {subheadline && <Subheadline>{subheadline}</Subheadline>}
-      {ctatext && ctalink &&
-        <CtaContainer>
-          <Button to={ctalink}>{ctatext}</Button>
-        </CtaContainer>
-      }
+      {ctatext
+        && ctalink && (
+          <CtaContainer>
+            <Button to={ctalink}>{ctatext}</Button>
+          </CtaContainer>
+      )}
     </ContentWraper>
   </Container>
 );

@@ -51,6 +51,7 @@ const Footer = () => {
       <ContentWraper>
         <NavList>
           {navigationItems.map((navigationItem, index) => (
+            // eslint-disable-next-line react/no-array-index-key
             <NavListItem key={index}>
               <LinkStyled to={navigationItem.link}>{navigationItem.title}</LinkStyled>
             </NavListItem>
@@ -59,6 +60,6 @@ const Footer = () => {
       </ContentWraper>
     </Container>
   );
-}
+};
 
 export default Footer;

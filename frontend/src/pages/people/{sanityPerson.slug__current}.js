@@ -34,7 +34,7 @@ const Subheadline = styled.p`
 
 const Container = styled.div`
   padding: ${rem(40)} 0;
-`
+`;
 const ContentWraper = styled.div`
   ${containerStyles.regular}
 `;
@@ -78,7 +78,7 @@ const Person = ({ data }) => {
       </Container>
     </Layout>
   );
-}
+};
 
 export const query = graphql`
   query Person($id: String!) {
@@ -95,6 +95,6 @@ export const query = graphql`
     phonenumber
   }
   }
-`
+`;
 
 export default Person;

@@ -39,7 +39,7 @@ const CardText = styled.div`
 const CardHeadline = styled.h1`
 `;
 const CardSubheadline = styled.p`
-`
+`;
 
 const PeoplePage = ({ data }) => {
   const people = data.allSanityPerson.nodes;
@@ -81,6 +81,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
 export default PeoplePage;

@@ -9,9 +9,9 @@ import navigation_menu from './documents/navigation_menu';
 import navigation_item from './documents/navigation_item';
 import person from './documents/person';
 
-import rich_text from './documents/blocks/rich_text';
-import text_media from './documents/blocks/text_media';
-import hero from './documents/blocks/hero';
+import rich_text from './objects/blocks/rich_text';
+import text_media from './objects/blocks/text_media';
+import hero from './objects/blocks/hero';
 
 import seo from './objects/seo';
 

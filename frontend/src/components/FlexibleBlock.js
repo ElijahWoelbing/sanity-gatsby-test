@@ -1,7 +1,7 @@
 import React, { isValidElement } from 'react';
 
-import RichText from '../components/blocks/RichText';
-import TextMedia from '../components/blocks/TextMedia';
+import RichText from './blocks/RichText';
+import TextMedia from './blocks/TextMedia';
 import Hero from './blocks/Hero';
 
 const blockComponents = {
@@ -21,7 +21,7 @@ const FlexibleBlock = ({ type, data }) => {
       `Block component for type '${type}' is not a function`
     );
   }
-
+  // eslint-disable-next-line react/jsx-props-no-spreading
   const block = <Component {...data} />;
 
   if (!isValidElement(block)) {

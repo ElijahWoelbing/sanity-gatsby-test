@@ -9,6 +9,7 @@ const Page = ({ data }) => {
   return (
     <Layout seo={page.seo}>
       {page.blocks.map((block, index) => (
+        // eslint-disable-next-line react/no-array-index-key
         <FlexibleBlock key={index} type={block._type} data={block} />
       ))}
     </Layout>
@@ -18,17 +19,17 @@ const Page = ({ data }) => {
 export const query = graphql`
   query Page($id: String) {
     sanityPage(id: {eq: $id}) {
-    seo {
-      title
-      description
-    }
-    blocks {
-      ...RichTextFragment
-      ...TextMediaFragment
-      ...HeroFragment
+      seo {
+        title
+        description
+      }
+      blocks {
+        ...RichTextFragment
+        ...TextMediaFragment
+        ...HeroFragment
+      }
     }
   }
-  }
-`
+`;
 
 export default Page;

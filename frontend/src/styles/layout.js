@@ -28,4 +28,5 @@ Object.entries(containerWidths).forEach(([name, size]) => {
   containerStyles[name] = styles;
 });
 
+// eslint-disable-next-line import/prefer-default-export
 export { containerStyles };

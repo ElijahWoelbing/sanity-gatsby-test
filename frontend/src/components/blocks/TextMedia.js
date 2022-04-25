@@ -57,7 +57,7 @@ const TextMedia = ({
           <PortableTextRenderer portableTextContent={_rawContent} />
         </TextContent>
         <ImageContent>
-          <GatsbyImage image={getImage(image.asset)} alt='' />
+          <GatsbyImage image={getImage(image.asset)} alt="" />
         </ImageContent>
       </FlexContainer>
     </ContentWraper>
@@ -76,6 +76,5 @@ export const query = graphql`
     }
   }
 `;
-
 
 export default TextMedia;

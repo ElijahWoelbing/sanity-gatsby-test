@@ -31,7 +31,7 @@ const Headline = styled.h1`
 
 const Container = styled.div`
   padding: ${rem(40)} 0;
-`
+`;
 const ContentWraper = styled.div`
   ${containerStyles.regular}
 `;
@@ -107,8 +107,8 @@ export const query = graphql`
       }
     }
       _rawContent
+    }
   }
-  }
-`
+`;
 
 export default Post;

@@ -1,6 +1,16 @@
+const path = require("path");
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV || 'development'}`
 });
+
+const gatsbyRequiredRules = path.join(
+  process.cwd(),
+  "node_modules",
+  "gatsby",
+  "dist",
+  "utils",
+  "eslint-rules"
+);
 
 module.exports = {
   /* Your site config here */
@@ -18,6 +28,15 @@ module.exports = {
         // use `graphqlTag` to specify the tag name. Defaults to `default`.
         graphqlTag: 'default',
       },
+    },
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        rulePaths: [gatsbyRequiredRules],
+        stages: ['develop'],
+        extensions: ['js', 'jsx', 'ts', 'tsx'],
+        exclude: ['node_modules', '.cache', 'public']
+      }
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

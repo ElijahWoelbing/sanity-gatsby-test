@@ -9,6 +9,7 @@ const Nav = styled.nav`
   padding: ${rem(10)} 0;
   background-color: ${colors.sandyBrown};
 `;
+
 const NavList = styled.ul`
   display: flex;
   list-style: none;
@@ -26,7 +27,7 @@ const LinkStyled = styled(Link)`
   &:hover {
     color: ${colors.persianGreen};
   }
-`
+`;
 
 const MainNavigation = () => {
   const data = useStaticQuery(graphql`
@@ -44,6 +45,7 @@ const MainNavigation = () => {
     <Nav>
       <NavList>
         {navigationItems.map((navigationItem, index) => (
+          // eslint-disable-next-line react/no-array-index-key
           <NavListItem key={index}>
             <LinkStyled to={navigationItem.link}>{navigationItem.title}</LinkStyled>
           </NavListItem>
@@ -51,6 +53,6 @@ const MainNavigation = () => {
       </NavList>
     </Nav>
   );
-}
+};
 
 export default MainNavigation;
