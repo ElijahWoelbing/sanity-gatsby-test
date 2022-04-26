@@ -6,6 +6,7 @@ import FlexibleBlock from '../components/FlexibleBlock';
 
 const Page = ({ data }) => {
   const page = data.sanityPage;
+  console.log(page);
   return (
     <Layout seo={page.seo}>
       {page.blocks.map((block, index) => (
