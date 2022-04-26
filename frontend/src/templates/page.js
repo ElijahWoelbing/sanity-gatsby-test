@@ -24,7 +24,7 @@ export const query = graphql`
         description
       }
       blocks {
-        ...RichTextFragment
+        ...HeadlineTextFragment
         ...TextMediaFragment
         ...HeroFragment
       }

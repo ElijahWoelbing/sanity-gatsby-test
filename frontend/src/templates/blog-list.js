@@ -19,7 +19,7 @@ const ContentWraper = styled.div`
 
 const CategoryNav = styled.div`
   padding: ${rem(20)} 0;
-`
+`;
 const CategoryNavList = styled.ul`
   display: flex;
   list-style: none;
@@ -50,7 +50,7 @@ const Card = styled(Link)`
   padding: ${rem(20)};
   border-radius: ${rem(5)};
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-`
+`;
 const CardImage = styled(GatsbyImage)`
   border-radius: ${rem(5)};
 `;
@@ -67,7 +67,7 @@ const CardTitle = styled.h1`
 `;
 
 const BlogList = ({ data, pageContext }) => {
-  const categories = pageContext.categories;
+  const { categories } = pageContext;
   const posts = data.allSanityPost.nodes;
   return (
     <Layout>
@@ -76,7 +76,7 @@ const BlogList = ({ data, pageContext }) => {
           <CategoryNav>
             <CategoryNavList>
               <CategoryNavListItem>
-                <LinkStyled to='/blog'>All Blogs</LinkStyled>
+                <LinkStyled to="/blog">All Blogs</LinkStyled>
               </CategoryNavListItem>
               {categories.map((category) => (
                 <CategoryNavListItem>
@@ -88,7 +88,7 @@ const BlogList = ({ data, pageContext }) => {
           <Grid>
             {posts.map((post) => (
               <Card to={`/blog/${post.slug.current}`}>
-                <CardImage image={getImage(post.image.asset)} alt='' />
+                <CardImage image={getImage(post.image.asset)} alt="" />
                 <CardText>
                   <CardEyeBrow>{post.category.title}</CardEyeBrow>
                   <CardTitle>{post.title}</CardTitle>
@@ -100,8 +100,8 @@ const BlogList = ({ data, pageContext }) => {
         </ContentWraper>
       </Container>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query AllPosts($category: String){

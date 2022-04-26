@@ -27,8 +27,8 @@ export default {
         title: 'Hero',
         type: 'hero'
       }, {
-        title: 'Rich Text',
-        type: 'rich_text'
+        title: 'Headline Text',
+        type: 'headline_text'
       }, {
         title: 'Text Media',
         type: 'text_media'

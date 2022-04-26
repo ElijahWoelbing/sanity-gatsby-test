@@ -26,4 +26,4 @@ export default () =>
           ![...blog, ...navigation].includes(item.getId())
         ))
       ]
-    )
+    );

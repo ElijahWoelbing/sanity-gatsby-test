@@ -1,6 +1,6 @@
 export default {
-  title: 'Rich Text',
-  name: 'rich_text',
+  title: 'Headline Text',
+  name: 'headline_text',
   type: 'object',
   fields: [
     {
@@ -12,8 +12,7 @@ export default {
     {
       title: 'Content',
       name: 'content',
-      type: 'array',
-      of: [{ type: 'block' }],
+      type: 'rich_text',
       validation: Rule => Rule.required()
     },
   ]

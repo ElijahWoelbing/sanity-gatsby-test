@@ -27,7 +27,7 @@ const TextContent = styled.div`
   color: ${colors.charcoal};
 `;
 
-const RichText = ({ headline, _rawContent }) => (
+const HeadlineText = ({ headline, _rawContent }) => (
   <Container>
     <ContentWraper>
       <Headline>{headline}</Headline>
@@ -39,11 +39,11 @@ const RichText = ({ headline, _rawContent }) => (
 );
 
 export const query = graphql`
-  fragment RichTextFragment on SanityRichText {
+  fragment HeadlineTextFragment on SanityHeadlineText {
     _type
     headline
     _rawContent
   }
 `;
 
-export default RichText;
+export default HeadlineText;

@@ -9,11 +9,13 @@ import navigation_menu from './documents/navigation_menu';
 import navigation_item from './documents/navigation_item';
 import person from './documents/person';
 
-import rich_text from './objects/blocks/rich_text';
-import text_media from './objects/blocks/text_media';
+import headline_text from './objects/blocks/headlineText';
+import text_media from './objects/blocks/textMedia';
 import hero from './objects/blocks/hero';
 
 import seo from './objects/seo';
+import youtube from './objects/youtube';
+import richText from './objects/richText';
 
 export default createSchema({
   name: 'default',
@@ -25,9 +27,11 @@ export default createSchema({
     seo,
     page,
     post,
-    rich_text,
+    headline_text,
     text_media,
     author,
-    category
+    category,
+    youtube,
+    richText
   ]),
 })

@@ -2,12 +2,12 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import styled from '@emotion/styled';
 
-import { rem } from '../../utilities/style';
-import { containerStyles } from '../../styles/layout';
-import { colors } from '../../styles/colors';
+import { rem } from '../utilities/style';
+import { containerStyles } from '../styles/layout';
+import { colors } from '../styles/colors';
 
-import Layout from '../../components/Layout';
-import PortableTextRenderer from '../../components/PortableTextRenderer';
+import Layout from '../components/Layout';
+import PortableTextRenderer from '../components/PortableTextRenderer';
 
 const Header = styled.div`
   padding: ${rem(250)} 0;

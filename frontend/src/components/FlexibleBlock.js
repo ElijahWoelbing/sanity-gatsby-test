@@ -1,12 +1,12 @@
 import React, { isValidElement } from 'react';
 
-import RichText from './blocks/RichText';
+import HeadlineText from './blocks/HeadlineText';
 import TextMedia from './blocks/TextMedia';
 import Hero from './blocks/Hero';
 
 const blockComponents = {
   hero: Hero,
-  rich_text: RichText,
+  headline_text: HeadlineText,
   text_media: TextMedia
 };
 

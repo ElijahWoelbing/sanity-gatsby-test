@@ -49,7 +49,6 @@ const TextMedia = ({
   image
 }) => (
   <Container>
-    {console.log(image)}
     <ContentWraper>
       <Headline>{headline}</Headline>
       <FlexContainer>

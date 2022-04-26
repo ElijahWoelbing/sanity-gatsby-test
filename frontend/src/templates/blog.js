@@ -3,12 +3,12 @@ import { graphql } from 'gatsby';
 import styled from '@emotion/styled';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-import { containerStyles } from '../../styles/layout';
-import { rem } from '../../utilities/style';
+import { containerStyles } from '../styles/layout';
+import { rem } from '../utilities/style';
 
-import Layout from '../../components/Layout';
-import PortableTextRenderer from '../../components/PortableTextRenderer';
-import { colors } from '../../styles/colors';
+import Layout from '../components/Layout';
+import PortableTextRenderer from '../components/PortableTextRenderer';
+import { colors } from '../styles/colors';
 
 const Header = styled.div`
   padding: ${rem(250)} 0;
@@ -32,6 +32,7 @@ const Headline = styled.h1`
 const Container = styled.div`
   padding: ${rem(40)} 0;
 `;
+
 const ContentWraper = styled.div`
   ${containerStyles.regular}
 `;
@@ -56,6 +57,7 @@ const AuthorText = styled.div`
 
 const AuthorName = styled.p`
 `;
+
 const AuthorRoll = styled.p`
   font-size: ${rem(12)};
 `;
